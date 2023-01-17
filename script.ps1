@@ -1,1 +1,1 @@
-Get-Content -Path "./cred.json"
+Get-Content -Path "./test.json"
