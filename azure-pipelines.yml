@@ -14,11 +14,7 @@ steps:
   displayName: "Get content"
   inputs:
     filePath: 'script.ps1'
-- task: PowerShell@2
-  displayName: "azure-cloud-shell"
-  inputs:
-      targetType: 'inline'
-      script: |
-        # Write your PowerShell commands here.
-        
-        az group list
+
+- pwsh: az group list
+  displayName: "local-pwsh-commands"
+
