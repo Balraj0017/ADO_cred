@@ -1,0 +1,6 @@
+{
+  "cloudflare_tal": {
+    "TYPE": "CLOUDFLAREAPI",
+    "apikey": "REDACTED",
+    "apiuser": "REDACTED"
+  }
