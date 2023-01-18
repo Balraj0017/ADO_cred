@@ -1,4 +1,5 @@
 # Starter pipeline
+
 # Start with a minimal pipeline that you can customize to build and deploy your code.
 # Add steps that build, run tests, deploy, and more:
 # https://aka.ms/yaml
@@ -10,10 +11,14 @@ pool: Default
   # vmImage: ubuntu-latest
 
 steps:
-- task: PowerShell@2
-  displayName: "Store the values from github to key-vault"
+# - task: PowerShell@2
+#   displayName: "Store the values from github to key-vault"
+#   inputs:
+#     filePath: 'script.ps1'
+- task: AzurePowerShell@5
   inputs:
-    filePath: 'script.ps1'
-
+    azureSubscription: 'Free Trial(8a79698d-207e-4c97-853a-252ea5bdbeea)'
+    ScriptType: 'FilePath'
+    ScriptPath: './script.ps1'
 
 
