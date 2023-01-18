@@ -11,10 +11,9 @@ pool: Default
 
 steps:
 - task: PowerShell@2
-  displayName: "Get content"
+  displayName: "Store the values from github to key-vault"
   inputs:
     filePath: 'script.ps1'
 
-- pwsh: az group list
-  displayName: "local-pwsh-commands"
+
 
